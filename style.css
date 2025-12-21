@@ -40,31 +40,37 @@ body {
 }
 #welcome .textbox h2 {
   font-size: 20px;
+  font-weight: 700;
   color: #13C3DB;
   border-bottom: 5px solid #979797;
   max-width: 180px;
+  margin-bottom: 20px;
 }
 #welcome .textbox h1 {
   font-size: 80px;
+  font-weight: 700;
+  line-height: 1.2;
   color: #ffffff;
 }
 #welcome .textbox .buttons {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 #welcome .textbox .buttons .find {
   margin: 0 10px;
-  padding: 15px 48px;
-  font-weight: 600;
-  background-color: #ffffff;
+  padding: 20px 48px;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #EFF5F9;
   border-radius: 30px;
   color: #000000;
   border: 0;
 }
 #welcome .textbox .buttons .appointment {
   margin: 0 10px;
-  padding: 15px 48px;
+  padding: 20px 48px;
+  font-size: 17px;
   font-weight: 600;
-  border: 1px solid #ffffff;
+  border: 1px solid #EFF5F9;
   border-radius: 30px;
   background: none;
   color: #ffffff;
@@ -74,34 +80,60 @@ body {
   padding: 95px 0;
 }
 #about .imgbox img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  zoom: 1.4;
+  zoom: 1.5;
 }
 #about .textbox h1 {
   font-size: 56px;
+  line-height: 1.2;
   color: #1D2A4D;
   font-weight: 700;
 }
 #about .textbox h2 {
   font-size: 20px;
+  font-weight: 700;
   color: #13C3DB;
   border-bottom: 5px solid #979797;
-  max-width: 83px;
+  max-width: 84px;
+  margin-bottom: 13px;
 }
 #about .textbox p {
-  font-size: 16px;
+  font-size: 17px;
+  line-height: 1.5;
   color: #848E9F;
+  margin: 30px 0;
 }
-#about .sevices {
-  display: flex;
+#about .services {
+  gap: 20px;
 }
-#about .sevices .iconbox {
+#about .services .iconbox {
+  display: block;
+  text-align: center;
+  padding: 30px 53px;
+  border-radius: 90px;
   background-color: #EFF5F9;
 }
-#about .sevices .iconbox i {
+#about .services .iconbox i {
+  font-size: 40px;
   color: #13C3DB;
 }
-#about .sevices .iconbox h6 {
+#about .services .iconbox .text {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+#about .services .iconbox .text h4 {
+  color: #1D2A4D;
+}
+#about .services .iconbox .text h6 {
   color: #13C3DB;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+#services .textbox h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #13C3DB;
+  border-bottom: 5px solid #979797;
+  max-width: 100px;
+}/*# sourceMappingURL=style.css.map */
