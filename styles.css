@@ -31,7 +31,7 @@ body {
 }
 
 #welcome {
-  background-image: url("doctor.jpg");
+  background-image: url("assets/doctor.jpg");
   background-size: cover;
 }
 #welcome .textbox {
@@ -41,6 +41,8 @@ body {
 #welcome .textbox h2 {
   font-size: 20px;
   color: #13C3DB;
+  border-bottom: 5px solid #979797;
+  max-width: 180px;
 }
 #welcome .textbox h1 {
   font-size: 80px;
@@ -66,4 +68,40 @@ body {
   border-radius: 30px;
   background: none;
   color: #ffffff;
+}
+
+#about {
+  padding: 95px 0;
+}
+#about .imgbox img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  zoom: 1.4;
+}
+#about .textbox h1 {
+  font-size: 56px;
+  color: #1D2A4D;
+  font-weight: 700;
+}
+#about .textbox h2 {
+  font-size: 20px;
+  color: #13C3DB;
+  border-bottom: 5px solid #979797;
+  max-width: 83px;
+}
+#about .textbox p {
+  font-size: 16px;
+  color: #848E9F;
+}
+#about .sevices {
+  display: flex;
+}
+#about .sevices .iconbox {
+  background-color: #EFF5F9;
+}
+#about .sevices .iconbox i {
+  color: #13C3DB;
+}
+#about .sevices .iconbox h6 {
+  color: #13C3DB;
 }/*# sourceMappingURL=styles.css.map */
