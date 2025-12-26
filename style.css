@@ -30,6 +30,31 @@ body {
   color: #848E9F;
 }
 
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#navbar .box {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+}
+#navbar .box .logo {
+  display: flex;
+  font-size: 40px;
+  color: #13C3DB;
+}
+#navbar .box .logo h1 {
+  margin-left: 10px;
+  font-weight: 700;
+}
+#navbar .box .nav a {
+  color: #000000;
+}
+
 #welcome {
   background-image: url("assets/doctor.jpg");
   background-size: cover;
@@ -42,7 +67,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #13C3DB;
-  border-bottom: 5px solid #979797;
+  border-bottom: 5px solid #8692A0;
   max-width: 180px;
   margin-bottom: 20px;
 }
@@ -80,7 +105,11 @@ body {
   padding: 95px 0;
 }
 #about .imgbox img {
-  zoom: 1.5;
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 #about .textbox h1 {
   font-size: 56px;
@@ -92,7 +121,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #13C3DB;
-  border-bottom: 5px solid #979797;
+  border-bottom: 5px solid #8692A0;
   max-width: 84px;
   margin-bottom: 13px;
 }
@@ -130,10 +159,163 @@ body {
   color: #13C3DB;
 }
 
+#services {
+  margin-bottom: 60px;
+}
 #services .textbox h2 {
   font-size: 20px;
   font-weight: 700;
   color: #13C3DB;
-  border-bottom: 5px solid #979797;
+  border-bottom: 5px solid #8692A0;
   max-width: 100px;
+  margin-bottom: 10px;
+}
+#services .textbox h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  color: #1D2A4D;
+  font-weight: 700;
+  width: 500px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#services .box {
+  margin-bottom: 25px;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #EFF5F9;
+}
+#services .box .icon {
+  padding: 40px 58px;
+  font-size: 30px;
+  border-radius: 100% 50%;
+  background-color: #13C5DD;
+  color: #FFFFFF;
+}
+#services .box .text {
+  margin: 25px 0;
+}
+#services .box .text h3 {
+  font-size: 24px;
+  color: #1D2A4D;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#services .box .text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #848E9F;
+}
+
+#appointment {
+  background-color: #13C5DD;
+  padding: 95px 0;
+}
+#appointment .textbox h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  border-bottom: 5px solid #8692A0;
+  max-width: 123px;
+  margin-bottom: 10px;
+}
+#appointment .textbox h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  color: #1D2A4D;
+  font-weight: 700;
+  width: 500px;
+  margin-bottom: 30px;
+}
+#appointment .textbox p {
+  color: #ffffff;
+  line-height: 1.4;
+  letter-spacing: 0.6px;
+  word-spacing: 2px;
+}
+#appointment .textbox .buttons {
+  margin-top: 40px;
+}
+#appointment .textbox .buttons .find {
+  margin: 0 10px;
+  padding: 20px 48px;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #1D2A4D;
+  border-radius: 30px;
+  color: #ffffff;
+  border: 0;
+}
+#appointment .textbox .buttons .readmore {
+  margin: 0 10px;
+  padding: 20px 48px;
+  font-size: 17px;
+  font-weight: 600;
+  border: 1px solid #1D2A4D;
+  border-radius: 30px;
+  background: none;
+  color: #1D2A4D;
+}
+#appointment .box {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 47px;
+  border-radius: 10px;
+}
+#appointment .box h2 {
+  font-size: 40px;
+  color: #1D2A4D;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#appointment .box .selects {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+#appointment .box .selects .department, #appointment .box .selects .doctor {
+  border-radius: 5px;
+  padding: 0 8px;
+  height: 50px;
+  width: 255px;
+  border: none;
+  background-color: #EFF5F9;
+  color: #848E9F;
+}
+#appointment .box .input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+#appointment .box .input .name, #appointment .box .input .email {
+  height: 50px;
+  width: 255px;
+  border: none;
+  background-color: #EFF5F9;
+  color: #848E9F;
+}
+#appointment .box .dateandtime {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+#appointment .box .dateandtime .date, #appointment .box .dateandtime .time {
+  height: 50px;
+  width: 255px;
+  border: none;
+  background-color: #EFF5F9;
+  color: #848E9F;
+}
+#appointment .box .submit {
+  padding: 20px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  background-color: #13C5DD;
+  color: #ffffff;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
