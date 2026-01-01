@@ -1,11 +1,13 @@
 #navbar
     position: sticky
     top: 0
+    z-index: 999
     background-color: #ffffff
     border: 1px solid #e5e5e5
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
     .box
         display: flex
+        align-items: center
         justify-content: space-between
         padding: 22px 0
         .logo
@@ -16,5 +18,17 @@
                 margin-left: 10px
                 font-weight: 700
         .nav
+            display: flex
+            align-items: center
+            height: 100%
+            gap: 30px
             a
-                color: #000000
+                font-size: 18px
+                font-weight: 700
+                color: #1D2A4D
+                transition: 0.2s
+                &:focus
+                    border-bottom: 3px solid #13C5DD
+                &:hover
+                    border-bottom: 3px solid #13C5DD
+                    color: #13C5DD

@@ -33,12 +33,14 @@ body {
 #navbar {
   position: sticky;
   top: 0;
+  z-index: 999;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #navbar .box {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 22px 0;
 }
@@ -51,8 +53,24 @@ body {
   margin-left: 10px;
   font-weight: 700;
 }
+#navbar .box .nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+}
 #navbar .box .nav a {
-  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1D2A4D;
+  transition: 0.2s;
+}
+#navbar .box .nav a:focus {
+  border-bottom: 3px solid #13C5DD;
+}
+#navbar .box .nav a:hover {
+  border-bottom: 3px solid #13C5DD;
+  color: #13C5DD;
 }
 
 #welcome {
@@ -318,4 +336,115 @@ body {
   background-color: #13C5DD;
   color: #ffffff;
   width: 100%;
+}
+
+#packages {
+  padding: 95px 0;
+}
+#packages .textbox {
+  text-align: center;
+}
+#packages .textbox h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #13C5DD;
+  border-bottom: 5px solid #8692A0;
+  max-width: 168px;
+  margin-bottom: 10px;
+}
+#packages .textbox h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  color: #1D2A4D;
+  font-weight: 700;
+  width: 500px;
+  margin-bottom: 30px;
+}
+#packages .packages .packs {
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  position: relative;
+  display: flex;
+  gap: 45px;
+}
+#packages .packages .packs .pack {
+  flex: 0 0 20em;
+  border-radius: 10px;
+  background-color: #EFF5F9;
+}
+#packages .packages .packs .pack .info {
+  text-align: center;
+}
+#packages .packages .packs .pack .info h3 {
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 28px;
+  color: #ffffff;
+}
+#packages .packages .packs .pack .info h5 {
+  color: #ffffff;
+}
+#packages .packages .packs .pack .info span {
+  font-weight: 700;
+  font-size: 56px;
+}
+#packages .packages .packs .pack .info .infotext {
+  padding: 50px 0;
+}
+#packages .packages .packs .pack .info .infotext p {
+  color: #848e9f;
+  margin-bottom: 25px;
+}
+#packages .packages .packs .pack .info .infotext .apply {
+  padding: 20px 50px;
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #13C5DD;
+}
+#packages .packages .packs .pack .info .image {
+  position: relative;
+}
+#packages .packages .packs .pack .info .image img {
+  border-radius: 10px 10px 0 0;
+}
+#packages .packages .packs .pack .info .image .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  background: rgba(29, 42, 77, 0.8);
+  inset: 0;
+}
+#packages .packages .packs .pack .info .image .overlay .text {
+  max-width: 190px;
+}
+#packages .packages .packs::-webkit-scrollbar {
+  display: none;
+}
+#packages .packages .packs::scroll-button(right), #packages .packages .packs::scroll-button(left) {
+  margin-top: 30px;
+  right: 46%;
+  content: ">";
+  border: none;
+  background-color: #13C5DD;
+  color: #ffffff;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0.1em;
+  cursor: pointer;
+  position: absolute;
+}
+#packages .packages .packs::scroll-button(left) {
+  right: 51%;
+  content: "<";
+}
+#packages .packages .packs::scroll-button(right):disabled, #packages .packages .packs::scroll-button(left):disabled {
+  opacity: 0.5;
+  cursor: auto;
 }/*# sourceMappingURL=style.css.map */
