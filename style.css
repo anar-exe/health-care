@@ -447,4 +447,24 @@ body {
 #packages .packages .packs::scroll-button(right):disabled, #packages .packages .packs::scroll-button(left):disabled {
   opacity: 0.5;
   cursor: auto;
+}
+
+#doctors .textbox {
+  text-align: center;
+}
+#doctors .textbox h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #13C5DD;
+  border-bottom: 5px solid #8692A0;
+  max-width: 168px;
+  margin-bottom: 10px;
+}
+#doctors .textbox h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  color: #1D2A4D;
+  font-weight: 700;
+  width: 500px;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */
