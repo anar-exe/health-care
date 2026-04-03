@@ -17,9 +17,11 @@ body {
   color: #848E9F;
   font-weight: 450;
   margin: 0;
+  cursor: pointer;
 }
 #topinfo .infos i {
   margin-right: 8px;
+  cursor: pointer;
 }
 #topinfo .infos .line {
   border-left: 2px solid #848E9F;
@@ -28,6 +30,7 @@ body {
 #topinfo .icons i {
   margin-left: 10px;
   color: #848E9F;
+  cursor: pointer;
 }
 
 #navbar {
@@ -71,6 +74,7 @@ body {
 #navbar .box .nav a:hover {
   border-bottom: 3px solid #13C5DD;
   color: #13C5DD;
+  cursor: pointer;
 }
 
 #welcome {
@@ -107,6 +111,10 @@ body {
   border-radius: 30px;
   color: #000000;
   border: 0;
+  transition: 0.3s;
+}
+#welcome .textbox .buttons .find:hover {
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.49);
 }
 #welcome .textbox .buttons .appointment {
   margin: 0 10px;
@@ -117,6 +125,12 @@ body {
   border-radius: 30px;
   background: none;
   color: #ffffff;
+  transition: 0.3s;
+}
+#welcome .textbox .buttons .appointment:hover {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.49);
 }
 
 #about {
@@ -155,7 +169,7 @@ body {
 #about .services .iconbox {
   display: block;
   text-align: center;
-  padding: 30px 53px;
+  padding: 30px 48px;
   border-radius: 90px;
   background-color: #EFF5F9;
 }
@@ -237,7 +251,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #ffffff;
-  border-bottom: 5px solid #8692A0;
+  border-bottom: 5px solid #DEE2E6;
   max-width: 123px;
   margin-bottom: 10px;
 }
@@ -267,6 +281,10 @@ body {
   border-radius: 30px;
   color: #ffffff;
   border: 0;
+  transition: 0.3s;
+}
+#appointment .textbox .buttons .find:hover {
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
 }
 #appointment .textbox .buttons .readmore {
   margin: 0 10px;
@@ -277,6 +295,12 @@ body {
   border-radius: 30px;
   background: none;
   color: #1D2A4D;
+  transition: 0.3s;
+}
+#appointment .textbox .buttons .readmore:hover {
+  background-color: #1D2A4D;
+  color: #ffffff;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
 }
 #appointment .box {
   text-align: center;
@@ -303,6 +327,10 @@ body {
   border: none;
   background-color: #EFF5F9;
   color: #848E9F;
+  transition: 0.3s;
+}
+#appointment .box .selects .department:hover, #appointment .box .selects .doctor:hover {
+  box-shadow: 0 0 15px rgba(0, 187, 212, 0.536);
 }
 #appointment .box .input {
   display: flex;
@@ -315,6 +343,10 @@ body {
   border: none;
   background-color: #EFF5F9;
   color: #848E9F;
+  transition: 0.3s;
+}
+#appointment .box .input .name:hover, #appointment .box .input .email:hover {
+  box-shadow: 0 0 15px rgba(0, 187, 212, 0.536);
 }
 #appointment .box .dateandtime {
   display: flex;
@@ -327,6 +359,10 @@ body {
   border: none;
   background-color: #EFF5F9;
   color: #848E9F;
+  transition: 0.3s;
+}
+#appointment .box .dateandtime .date:hover, #appointment .box .dateandtime .time:hover {
+  box-shadow: 0 0 15px rgba(0, 187, 212, 0.677);
 }
 #appointment .box .submit {
   padding: 20px 0;
@@ -336,6 +372,11 @@ body {
   background-color: #13C5DD;
   color: #ffffff;
   width: 100%;
+  transition: 0.3s;
+}
+#appointment .box .submit:hover {
+  color: #000000;
+  box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.4);
 }
 
 #packages {
@@ -403,6 +444,11 @@ body {
   color: #ffffff;
   font-weight: 700;
   background-color: #13C5DD;
+  transition: 0.3s;
+}
+#packages .packages .packs .pack .info .infotext .apply:hover {
+  color: #000000;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 #packages .packages .packs .pack .info .image {
   position: relative;
@@ -449,6 +495,9 @@ body {
   cursor: auto;
 }
 
+#doctors {
+  padding: 95px 0;
+}
 #doctors .textbox {
   text-align: center;
 }
@@ -467,4 +516,275 @@ body {
   font-weight: 700;
   width: 500px;
   margin-bottom: 30px;
+}
+
+#find {
+  padding: 95px 0;
+  background-color: #13C5DD;
+}
+#find .textbox {
+  max-width: 500px;
+  text-align: center;
+}
+#find .textbox h2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 5px solid #DEE2E6;
+  max-width: 128px;
+  margin-bottom: 10px;
+}
+#find .textbox h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #1D2A4D;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+#find .textbox p {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.3;
+}
+#find .search {
+  margin: 0 120px;
+  margin-top: 50px;
+}
+#find .search select {
+  width: 150px;
+  height: 55px;
+  border-radius: 10px 0 0 10px;
+  border: 0;
+  color: #757575;
+}
+#find .search input {
+  margin-left: -3px;
+  width: 300px;
+  height: 55px;
+  border-radius: 0;
+}
+#find .search input:focus {
+  box-shadow: 0 0 0 3px rgba(22, 210, 191, 0.474);
+}
+#find .search .searchbtn {
+  margin-left: -3px;
+  border-radius: 0 10px 10px 0;
+  background-color: #1D2A4D;
+  border: 0;
+  color: #ffffff;
+  padding: 20px 50px;
+  transition: 0.3s;
+}
+#find .search .searchbtn:hover {
+  box-shadow: 0 0 0 5px rgba(0, 70, 150, 0.5098039216);
+}
+
+#blogpost {
+  padding: 95px 0;
+}
+#blogpost .textbox {
+  max-width: 500px;
+  text-align: center;
+}
+#blogpost .textbox h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #13C5DD;
+  border-bottom: 5px solid #DEE2E6;
+  margin-bottom: 20px;
+}
+#blogpost .textbox h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #1D2A4D;
+  margin-bottom: 50px;
+}
+#blogpost .post {
+  background-color: #EFF5F9;
+  border-radius: 10px;
+  max-width: 400px;
+}
+#blogpost .post .info {
+  padding: 25px;
+}
+#blogpost .post .info h3 {
+  font-size: 28px;
+  color: #1D2A4D;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#blogpost .post .info h3:hover {
+  cursor: pointer;
+  color: #0F9EB1;
+}
+#blogpost .post .info p {
+  font-size: 18px;
+  font-weight: 400;
+  word-spacing: 2px;
+  line-height: 1.3;
+  color: #848E9F;
+  margin-bottom: 30px;
+}
+#blogpost .post .info .author .user .imgbox {
+  width: 25px;
+}
+#blogpost .post .info .author .user .imgbox img {
+  border-radius: 13px;
+}
+#blogpost .post .info .author .user h5 {
+  color: #848E9F;
+  margin-left: 5px;
+}
+#blogpost .post .info .author .stats .eye i {
+  color: #13C5DD;
+}
+#blogpost .post .info .author .stats .eye span {
+  color: #848E9F;
+}
+#blogpost .post .info .author .stats .comment {
+  margin-left: 10px;
+}
+#blogpost .post .info .author .stats .comment i {
+  color: #13C5DD;
+}
+#blogpost .post .info .author .stats .comment span {
+  color: #848E9F;
+}
+#blogpost .post .imgbox {
+  width: 400px;
+}
+#blogpost .post .imgbox img {
+  border-radius: 10px 10px 0 0;
+}
+
+footer {
+  padding: 95px 0 0;
+  background-color: #1D2A4D;
+}
+footer .menu {
+  padding-bottom: 95px;
+  border-bottom: 1px solid #354F8E;
+}
+footer .menu .getintouch {
+  max-width: 300px;
+}
+footer .menu .getintouch h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #12BBD2;
+  border-bottom: 5px solid #314A85;
+  margin-bottom: 30px;
+}
+footer .menu .getintouch p {
+  font-size: 18px;
+  color: #E9EFF3;
+  word-spacing: 2px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+footer .menu .getintouch .info i {
+  margin-right: 15px;
+  color: #12BBD2;
+}
+footer .menu .getintouch .info h4 {
+  font-size: 18px;
+  color: #E9EFF3;
+}
+footer .menu .quick h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #12BBD2;
+  border-bottom: 5px solid #314A85;
+  margin-bottom: 30px;
+}
+footer .menu .quick .nav i, footer .menu .quick .nav a {
+  font-size: 18px;
+  color: #E9EFF3;
+}
+footer .menu .quick .nav i:hover, footer .menu .quick .nav a:hover {
+  cursor: pointer;
+}
+footer .menu .popular h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #12BBD2;
+  border-bottom: 5px solid #314A85;
+  margin-bottom: 30px;
+}
+footer .menu .popular .nav i, footer .menu .popular .nav a {
+  font-size: 18px;
+  color: #E9EFF3;
+}
+footer .menu .popular .nav i:hover, footer .menu .popular .nav a:hover {
+  cursor: pointer;
+}
+footer .menu .newsletter h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #12BBD2;
+  border-bottom: 5px solid #314A85;
+  margin-bottom: 30px;
+}
+footer .menu .newsletter .mail input {
+  width: 205px;
+  height: 55px;
+  border-radius: 10px 0 0 10px;
+}
+footer .menu .newsletter .mail .signup {
+  margin-left: -4px;
+  width: 80px;
+  height: 55px;
+  border-radius: 0 10px 10px 0;
+  color: #ffffff;
+  font-weight: 700;
+  border: 0;
+  background-color: #13C5DD;
+  transition: 0.3s;
+}
+footer .menu .newsletter .mail .signup:hover {
+  color: #000000;
+  box-shadow: 0 0 0 5px rgba(0, 150, 136, 0.3);
+}
+footer .menu .newsletter .followus h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #13C5DD;
+  margin: 25px 0 20px;
+}
+footer .menu .newsletter .followus .icons {
+  gap: 10px;
+}
+footer .menu .newsletter .followus .icons .icon {
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #ffffff;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #13C5DD;
+  transition: 0.3s;
+}
+footer .menu .newsletter .followus .icons .icon i {
+  font-size: 20px;
+  transition: 0.3s;
+}
+footer .menu .newsletter .followus .icons .icon:hover {
+  box-shadow: 0 0 0 5px rgba(0, 150, 136, 0.3);
+  cursor: pointer;
+}
+footer .menu .newsletter .followus .icons .icon:hover i {
+  color: #000000;
+  cursor: pointer;
+}
+footer .ending {
+  margin: 20px 0;
+}
+footer .ending h6 {
+  font-size: 18px;
+  color: #ffffff;
+}
+footer .ending h6 a {
+  color: #13C5DD;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
